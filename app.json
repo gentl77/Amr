@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "DimensionMass AI",
+    "slug": "dimensionmass-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "DimensionMass AI uses the camera to measure object dimensions and estimate mass, density, volume, and area. All image processing is local by default."
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.dimensionmass.ai",
+      "infoPlist": {
+        "NSCameraUsageDescription": "DimensionMass AI uses the camera to measure object dimensions and estimate mass, density, volume, and area. All image processing happens locally by default.",
+        "NSPhotoLibraryUsageDescription": "DimensionMass AI may access photos for optional calibration or saved measurement references."
+      }
+    },
+    "android": {
+      "package": "com.dimensionmass.ai",
+      "permissions": [
+        "CAMERA",
+        "INTERNET"
+      ],
+      "usesCleartextTraffic": false
+    }
+  }
+}
